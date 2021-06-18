@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lusca Movies</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="imagem/png" href="imgs/logo.png" />
+</head>
+
+<body>
+
+    <header class="container header">
+
+        <Section class="row">
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 header_area">
+                <img src=" imgs/logo.png " class="logo ">
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xg-9 menu_area">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="flex-sm-fill text-sm-center nav-link " href="#Lançamentos ">Lançamentos</a>
+                        <a class="flex-sm-fill text-sm-center nav-link " href="#Destaques ">Destaques</a>
+                        <a class="flex-sm-fill text-sm-center nav-link " href="#Avaliações ">Avaliações</a>
+                        <a class="flex-sm-fill text-sm-center nav-link " href="#Entrevistas ">Entrevistas</a>
+                        <a class="flex-sm-fill text-sm-center nav-link " href="#Novidades ">Novidades</a>
+
+                        <input type="text" placeholder="Mais assistidos" aria-label="Ir" id="Pesq">
+                        <button id="Ir" onclick="Pesquisa()">Ir</button>
+
+                    </div>
+                </nav>
+            </div>
+
+        </section>
+
+    </header>
+
+    <main class="container main">
+        <div class="Pesquisa" id="Pesquisa"></div>
+        <section class="container lançamentos">
+
+            <div class="container titulos">
+                <h2 id="Lançamentos">Lançamentos</h2>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner" id="tela">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+
+        </section>
+
+        <section class="container destaques ">
+            <div class="row">
+                <div class="col-8 container titulos">
+                    <h2 id="Destaques">Destaques</h2>
+                </div>
+
+                <div class="col-4 titulos">
+                    <select class="form-control">
+                        <option selected>Todos</option>
+                        <option>Aventura</option>
+                        <option>Comédia</option>
+                        <option>Romance</option>
+                    </select></div>
+            </div>
+
+            <div class="row" id="tela2">
+
+            </div>
+
+            <div class="col-12" style="text-align: right; padding-top: 10px;">
+                <button type="button" class="btn btn-dark">Carregar mais filmes</button>
+            </div>
+
+        </section>
+
+        <section class="container avaliações ">
+
+            <div class="row">
+                <div class="container titulos ">
+                    <h2 id="Avaliações">Últimas avaliações</h2>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src=" imgs/bagre.png" alt="card image"></p>
+                                        <h4 class="card-title">Bagre</h4>
+                                        <p class="card-text">Impossível Amor e Monstros não levar efeitos visuais, Tenet
+                                            e O Céu da Meia Noite são genéricos demais e pouco imersivos.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Bagre</h4>
+                                        <p class="card-text">Impossível Amor e Monstros não levar efeitos visuais, Tenet
+                                            e O Céu da Meia Noite são genéricos demais e pouco imersivos.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="imgs/lambari.png" alt="card image"></p>
+                                        <h4 class="card-title" id="Avaliações">Lambari</h4>
+                                        <p class="card-text">
+                                            Bom filme, uma boa mistura de ação e comédia, um personagem bem carismático,
+                                            gostei bastante mesmo...</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Lambari</h4>
+                                        <p class="card-text">Bom filme, uma boa mistura de ação e comédia, um personagem
+                                            bem carismático, gostei bastante mesmo...</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid" src="imgs/tilapia.png" alt="card image"></p>
+                                        <h4 class="card-title">Tilapia</h4>
+                                        <p class="card-text">Amei do início ao fim. O senso de humor e o sarcasmo de
+                                            Ryan Reynolds (adorável e sedutor) deixou o filme incrível.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Tilapia</h4>
+                                        <p class="card-text">Amei do início ao fim. O senso de humor e o sarcasmo de
+                                            Ryan Reynolds (adorável e sedutor) deixou o filme incrível. Não sou crítica,
+                                            sou fã de carteirinha.</p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12" style="text-align: right;">
+                    <button type="button" class="btn btn-dark">Carregar mais avaliações</button></div>
+            </div>
+
+
+
+
+        </section>
+
+        <section class="container entrevistas ">
+
+            <div class="container titulos ">
+                <h2 id="Entrevistas">Makingof</h2>
+            </div>
+            <div class="row col-12">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/K4s5ceLficQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VWLi8PMfo_s"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zs2JPrHt7qY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="col-12" style="text-align: right;">
+                    <button type="button" class="btn btn-dark">Carregar mais filmes</button></div>
+            </div>
+            </div>' '
+        </section>
+
+        <section class="container novidades_sobre">
+
+            <div class="row col-12">
+
+                <div class="col-6">
+                    <div class="container titulos">
+                        <h2 id="Novidades">Novidades</h2>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                            <img src=" imgs/Capitã.jpg " class="logo ">
+                        </div>
+
+                        <div class="col-12 text">
+                            <p>A versão mais popular da Capitã Marvel nos quadrinhos é a repaginada pela autora Kelly
+                                Sue
+                                DeConnick em 2014, que conseguiu se tornar a versão definitiva da personagem nos
+                                quadrinhos
+                                da Marvel. E não é à toa que esta versão foi a principal fonte de inspiração
+                                para o filme solo da super-heroína, que estreou em 2019. Da sua personalidade, poderes
+                                e,
+                                claro, e novo e incrível uniforme.</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                            <img src=" imgs/ben10.jpg " class="logo ">
+                        </div>
+
+                        <div class="col-12 text">
+                            <p>Produtor de novo filme do Ben 10 revela se o herói seria capaz de salvar o mundo do
+                                Coronavírus e Novo filme do “Ben 10” ganha primeiro trailer Autor de notícias: Paulo
+                                Andrade
+                                2021-04-22 14:35:59 Novo filme do «Ben 10» ganha primeiro trailer e Produtor
+                                de novo filme do Ben 10 revela se o herói seria capaz de salvar o mundo do Coronavírus
+                            </p>
+
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
+                            <img src=" imgs/marvel.jpg " class="logo ">
+                        </div>
+
+                        <div class="col-12 text">
+                            <p>Segunda série do MCU exibida pelo Disney+, Falcão e o Soldado Invernal teve sua primeira
+                                temporada encerrada nesta sexta-feira (23), em um episódio cheio de ação e
+                                acontecimentos
+                                aguardados pelos fãs. Sam (Anthony Mackie) enfim assumiu o escudo e o título
+                                de Capitão América, a identidade verdadeira do Mercador do Poder foi revelada e Bucky
+                                (Sebastian Stan) enfim contou a Yori (Ken Takemoto) a verdade sobre a morte de seu
+                                filho.
+                                Embora esses acontecimentos pareçam amarrar as
+                                pontas soltas deixadas ao longo da série, é muito provável que elas tenham efeitos
+                                significativos no futuro da franquia - e de uma possível segunda temporada. </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class=" col-6 ">
+                    <div class="container titulos ">
+                        Sobre
+                    </div>
+                    <div>
+                        <p>Este site foi criado com o intuito de promover o afunilamento do conteudo de maior qualidade
+                            possivel dentro do iuniverso cinematofrafico.</p>
+
+                    </div>
+
+                    <div class="container titulos ">
+                        Editorial
+                    </div>
+
+                    <div>
+                        <h4>
+                            Redação:
+                        </h4>
+
+                        <p1>
+                            Lucas Carvalho da Luz
+                        </p1>
+                    </div>
+
+                    <div>
+                        <h4>
+                            Gerente geral:
+                        </h4>
+
+                        <p3>
+                            Lucas Carvalho da Luz
+                        </p3>
+                    </div>
+
+                    <div class="container titulos">
+                        Redes Sociais
+                    </div>
+                    <div class="container row redes">
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                            <a href = "https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-5x"></i></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                            <a href = "https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-5x"></i></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 ">
+                            <a href = "https://twitter.com/home?lang=pt" target="_blank"><i class="fab fa-twitter fa-5x"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <section class=comentarios>
+
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="container titulos">
+                            Deixe sua opnião sobre nosso site:
+                        </div>
+                        <form id="register" method="post" class="formulario col-12">
+                            <div class="row">
+                                <span id="instruction"></span>
+                                <div class="col-12">
+                                    <p>
+                                        <label for="titleForm">Nome:</label>
+                                        <input type="text" id="titleForm" class="form-control" name="titleForm"
+                                            autocomplete="off" placeholder="Escreva seu nome..." />
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        <label for="descForm">Envie seu comentario:</label>
+                                        <textarea class="form-control" placeholder="Deixe um comentario aqui"
+                                            id="descForm" name="descForm" style="height: 60%"
+                                            placeholder="Digite suas sugestões..."></textarea>
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="coment" class="row" id="comentsarea">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>Site criado por Lucas Carvalho da Luz</p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js "
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js "
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous ">
+    </script>
+    <script src="https://kit.fontawesome.com/b96794caf0.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
