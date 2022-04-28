@@ -1,2 +1,3 @@
 # Portal-de-Filmes
-Homepage of a non-functional film review and review site.
+Homepage of an api based movie search and review website.
+
